@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tatk"
+version = "0.1.0"
+description = "Text Augmentation Toolkit for NLP data augmentation"
+authors = [
+  { name = "Liam Geron" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "nltk>=3.8"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
